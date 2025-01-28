@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justice</title>
+    <!-- tainwind cdn -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .poppins {
+        font-family: "Poppins", serif;
+      }
+      .head-title {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
+    <!-- daisyUI -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "button-color": "#B68C5A",
+              "dark-3": "#707070",
+              "dark-6": "#E7E7E7",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="poppins md:container mx-auto">
+    <header>
+      <nav class="md:py-12 py-6">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="dark-3"><a>Services</a></li>
+                <li class="dark-3"><a>Cases</a></li>
+                <li class="dark-3"><a>Blog</a></li>
+                <li class="dark-3"><a>Contact Us</a></li>
+                <li class="dark-3"><a>Home</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl hidden md:block"
+              ><img src="images/logo2.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <details>
+                  <summary class="dark-3">Home</summary>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="dark-3">Services</summary>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="dark-3">Cases</summary>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="dark-3">Blog</summary>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="dark-3">Contact Us</summary>
+                </details>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-button-color text-white font-semibold"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Img -->
+      <div
+        class="hero lg:h-[550px] lg:w-auto hero rounded-lg"
+        style="background-image: url(images/banner.png)"
+      >
+        <!-- <div class="hero-overlay"></div> -->
+        <div class="text-center">
+          <div class="">
+            <h1
+              class="text-7xl text-white head-title w-2/3 font-extrabold text-center mx-auto pb-6"
+            >
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="text-[#ddd] max-w-screen-sm mx-auto py-7">
+              We provide effective legal solutions tailored to meet your
+              specific needs, ensuring clarity and precision in every case.
+            </p>
+            <div class="">
+              <input
+                class="p-5 mr-4 w-auto mb-4 md:w-1/2 rounded-lg"
+                type="text"
+                placeholder="Search Your Services"
+              />
+              <input
+                class="bg-button-color py-4 px-10 font-semibold text-xl text-white rounded-lg"
+                type="submit"
+                value="Search"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Legal Practise Area -->
+      <section class="pt-32">
+        <h1 class="font-bold text-4xl head-title text-center pb-6">
+          The Legal Practice Area
+        </h1>
+        <p class="dark-3 text-center max-w-3xl mx-auto pb-16">
+          he legal practice area encompasses various fields of law, including
+          corporate law, criminal law, family law, intellectual property.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/business.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title py-6 head-title text-3xl font-extrabold">
+                Business Law
+              </h2>
+              <p class="dark-3 pb-9">
+                Business law refers to the legal rules and regulations that
+                govern commercial interactions,.
+              </p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title py-6 head-title text-3xl font-extrabold">
+                Criminal Law
+              </h2>
+              <p class="dark-3 pb-9">
+                Criminal law governs acts deemed harmful to society and
+                prescribes punishments for those who commit them.
+              </p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title py-6 head-title text-3xl font-extrabold">
+                Child Support
+              </h2>
+              <p class="dark-3 pb-9">
+                Child support is a financial obligation paid by a noncustodial
+                parent to help cover the costs of raising a child.
+              </p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title py-6 head-title text-3xl font-extrabold">
+                Education Law
+              </h2>
+              <p class="dark-3 pb-9">
+                Education law governs the legal rights and responsibilities in addressing  and equal access to education.
+              </p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title py-6 head-title text-3xl font-extrabold">
+                Divorce Law
+              </h2>
+              <p class="dark-3 pb-9">
+                Divorce law governs the legal process of ending a marriage,
+                addressing issues such as property division, alimony, child
+                custody, and support.
+              </p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title py-6 head-title text-3xl font-extrabold">
+                Tax Law
+              </h2>
+              <p class="dark-3 pb-9">
+                Tax law governs how taxes are imposed, collected, and enforced
+                by governments, , businesses, and
+                entities. 
+              </p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
